@@ -571,6 +571,25 @@ const ABI = [
         type: "address",
       },
     ],
+    name: "seeAlphaFollowersLen",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "alpha",
+        type: "address",
+      },
+    ],
     name: "seeAlphaPrices",
     outputs: [
       {
@@ -633,6 +652,25 @@ const ABI = [
     inputs: [
       {
         internalType: "address",
+        name: "alpha",
+        type: "address",
+      },
+    ],
+    name: "seeIfHasWithd",
+    outputs: [
+      {
+        internalType: "bool",
+        name: "",
+        type: "bool",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
         name: "user",
         type: "address",
       },
@@ -681,6 +719,30 @@ const ABI = [
         internalType: "string",
         name: "",
         type: "string",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "alpha",
+        type: "address",
+      },
+      {
+        internalType: "address",
+        name: "user",
+        type: "address",
+      },
+    ],
+    name: "seeNextTimePayThisAlpha",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
       },
     ],
     stateMutability: "view",
@@ -910,6 +972,30 @@ const ABI = [
         internalType: "uint256",
         name: "",
         type: "uint256",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+      {
+        internalType: "address",
+        name: "",
+        type: "address",
+      },
+    ],
+    name: "withdrawThisPeriod",
+    outputs: [
+      {
+        internalType: "bool",
+        name: "",
+        type: "bool",
       },
     ],
     stateMutability: "view",
@@ -2017,8 +2103,8 @@ const ABI3 = [
 ];
 var web3Instance = new Web3(web3.currentProvider);
 
-const conAddress = "0x485BB4738609b6733bB910ffdaF4EbB2c704E406";
-const conAddress2 = "0x7C26A5E2711568940986a9e1A0fe53F09d8ae138";
+const conAddress = "0x6994eD4f085b000eC4e0cA4F58cFCb11f075e13a";
+const conAddress2 = "0xc533936679A325622c42b9eF721a3E59Cf6B300c";
 const conAddress3 = "0x10B0c63Eb35e64e4dFFF50457dBD3a0f06033303";
 const contract = new web3Instance.eth.Contract(ABI, conAddress);
 const contract2 = new web3Instance.eth.Contract(ABI2, conAddress2);
@@ -2742,7 +2828,7 @@ copyRef.addEventListener("click", async() => {
   try {
     var myRefCode = await contract3.methods.seeMyCode(connectedAddress).call();
     refLink =
-      "http://127.0.0.1:5500/userZone/userZone.html?refCode=" +
+      "https://alphabase-test.github.io/AlphaScoutZone/AlphaScout.html?refCode=" +
       myRefCode.toString();
     copyToClipboard(refLink);
     alert("Enlace de referencia copiado al portapapeles: " + refLink);

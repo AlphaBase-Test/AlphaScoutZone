@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaBase - User Zone</title>
+    <link rel="stylesheet" href="uZone.css">
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+</head>
+<body>
+
+    <div id="header">
+        <img src="logoAlphaBase.png" id="logo">
+        <p id="title">AlphaBase</p>
+
+        <button id="wallet">Connect Wallet</button>
+    </div>
+
+    <div id="cover" style="position: absolute; display:block; width: 101vw; height: 90vh; background-color: rgba(0, 0, 0, 0.774); z-index: 5; margin-top: 10vh;">
+        <div id="msg1">
+            Please Connect Wallet
+        </div>
+    </div>
+
+    <div id="userZoneDiv">
+        <img src="webimg.png" style="margin-left: 40vw;opacity: 30%;margin-top: 3vh;" >
+    </div>
+
+    <div id="beta">
+        BETA
+    </div>
+
+    <div id="alpha">
+        <img src="logoAlphaBase.png" id="logo2">
+        AlphaBase <br> Platform
+        <button id="launch">Launch App</button>
+    </div>
+
+    <div id="plans">
+       
+
+        <button id="buy">Buy Monthly</button>
+        <button id="buyB">Buy Annual</button>
+
+        <div id="simple" style="display: block;">
+            <p class="planDes">Daily updates in Trading, DeFi and Onchain Signals </p>
+            <input type="text" class="input" id="refCodeIn" placeholder="write referral code">
+            <button id="apply">Apply code</button>
+            <div class="monPrice">
+                <p id="simpleMonPrice" >0.05</p>
+                <p class="eth1" >ETH</p>
+            </div>
+            <div class="annPrice">
+                <p id="simpleAnnPrice" >0.5</p>
+                <p class="eth1">ETH</p>
+            </div>
+            <a href="google.es" class="moreI"><p>More Info</p></a>
+        </div>
+        <div id="silver" style="display: none;">
+            silver
+            
+        </div>
+        <div id="gold" style="display: none;">
+             golden
+        </div>
+        <div id="simple" style="display: none;">
+            Simple
+        </div>
+    </div>
+
+    <div id="myZone">
+        <p id="address"></p>
+        <p id="addressText">Address</p>
+        <p id="followText">Following</p>
+        <p id="follow">3</p>
+        <p id="planText">Plan</p>
+        <p id="plan">Golden</p>
+        <p id="nextPayText">Next Payment</p>
+        <p id="nextPay">05/Jul/2024</p>
+
+        <button id="zoneBut">My Zone</button>
+
+    </div>
+
+    <div id="search">
+        <input type="text" placeholder="Search an AlphaProv" class="input" id="input1">
+        <button id="searchBut">Search</button>
+        <img src="https://static.vecteezy.com/system/resources/previews/009/589/474/original/magnifying-icon-magnifying-clipart-transparent-free-png.png" id="lupa" title="Search AlphaProvs">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/009/344/493/small/x-transparent-free-png.png" id="out">
+        <div id="alphaSearch" style="display: none;">
+            <p id="alphaName"></p>
+            <p id="followers">12</p>
+            <p id="signals">50</p>
+            <p id="f">followers</p>
+            <p id="s">signals</p>
+            <button id="alphaMonPrice"></button>
+            <button id="alphaAnnPrice"></button>
+            <p id="a">Annual</p>
+            <p id="m">Monthly</p>
+        </div>
+    </div>
+
+    <div id="alphaSignals">
+        <div id="tradingSigList" class="list">
+            <p id="t1"> No Trading Signals </p>
+            <p id="t2">Click on this icon to search for an AlphaProv</p>
+            <img src="https://static.vecteezy.com/system/resources/previews/009/589/474/original/magnifying-icon-magnifying-clipart-transparent-free-png.png" id="lupa2">
+            
+            <p id="t3">The "<b>Following</b>" section will show the AlphaProvs you've paid for</p>
+            <img src="https://icons.veryicon.com/png/o/miscellaneous/3vjia-icon-line/follow-42.png" id="followImg">
+
+            <p id="t4">You can change the signal type using the blue buttons at the top</p>
+            <div id="blue"></div>
+
+            <p id="t5">Click on this icon to create a referral link and generate income by inviting your friends</p>
+            <img src="https://cdn-icons-png.flaticon.com/512/4578/4578534.png" id="earnLogo2">
+        </div>
+    </div>
+
+    <p id="address2"></p>
+<div id="siDiv">
+    <div id="validator">
+        <p id="valPoints"></p>
+        Validator Points
+    </div>
+
+    <div id="numFollowingDiv">
+        <p id="numFollowing">7</p>
+        <p style="bottom: 1vh;">Alphas Following</p>
+    </div>
+
+    <div id="alphaNextPay">
+        <p id="npta">17/05/2024</p>
+        <p>Next Payment</p>
+    </div>
+
+    <div id="myReferCode">
+        <p id="mrc">No Referral Code</p>
+        <button id="butCopyRefLink">
+            <img src="copyLink.png" id="copyImg">
+            Link
+        </button>
+    </div>
+
+     <div id="myAlphas">
+        Following
+        <img src="https://icons.veryicon.com/png/o/miscellaneous/3vjia-icon-line/follow-42.png" id="followImg2">
+    </div>
+
+</div>
+    <div id="butSign">
+        <button class="butAlpha" id="alphaTrad">Trading</button>
+        <button class="butAlpha" id="alphaOnchain">Coming Soon</button>
+        <button class="butAlpha" id="alphaICO">Coming Soon</button>
+        <button class="butAlpha" id="alphaLows">Coming Soon</button>
+    </div>
+
+    <div id="userEarn">
+        <img src="https://cdn-icons-png.flaticon.com/512/4578/4578534.png" id="earnLogo">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/009/344/493/small/x-transparent-free-png.png" id="out2">
+        <div id="divId2">
+            <p id="textRefer">Create your Referral Code and invite your friends, you will earn a 3% of their payments</p>
+            <input type="text" class="input" id="refCodeCreate" placeholder="write referral code">
+            <button id="create">Create code</button>
+            <p id="textRefer2">*ETH will be send directly to your wallet</p>
+
+        </div>
+    </div>
+
+    <div id="launchABbut">
+        <img src="logoAlphaBase.png" id="LaunchLogoBut">
+    </div>
+
+    <div id="moreInfoSig" style="display: none;">
+        
+        <p id="mrinfAss"></p>
+        <p id="mrinfNam"></p>
+        <img src="long.png" id="imgLongmi">
+        <img src="short.png" id="imgShortmi">
+        <div id="mis1">
+            <div id="takeProfitsDiv1">Take Profit</div>
+            <div id="takeProfitsDiv2">Partial TP</div>
+            <div id="takeProfitsDiv3">Pot. Profit</div>
+            <div id="takeProfitsDiv4"></div>
+            <div id="takeProfitsDiv5">---</div>
+            <div id="takeProfitsDiv6"></div>
+        </div>
+        <div id="entrymit">Entry</div>
+        <div id="entrymit2"></div>
+        <div id="mis2">
+            <div id="stopLossDiv1">Stop Loss</div>
+            <div id="stopLossDiv3">Pot. Loss</div>
+            <div id="stopLossDiv4"></div>
+            <div id="stopLossDiv6"></div>
+        </div>
+        <div id="alphaMsg">
+        </div>
+         <p id="msgTextTit">Signal Message:</p>
+        <div id="validate">
+            <p style="position: absolute; margin-top: 4.5vh; margin-left: 1vw; color: rgb(200,200,200)">Validate</p>
+            <p id="sigId">Signal Id</p>
+            <button id="fail">Fail</button>
+            <button id="succ">Success</button>
+        </div>
+    </div>
+
+    <div id="myAlphaInfo">
+        <p id="numSigText">AlphaProv Info</p>
+        <div id="numSignalsTot">
+            <p class="seeNumSigC" id="seeTotalSig">0</p>
+            <p class="SigAm">Total Signals</p>
+        </div>
+        <div id="numSignalsTra">
+            <p class="seeNumSigC" id="seeTraSig">0</p>
+            <p class="SigAm">Trading</p>
+        </div>
+        <div id="numSignalsOnc">
+            <p class="seeNumSigC" id="seeOncSig">0</p>
+            <p class="SigAm">Onchain</p>
+        </div>
+        <div id="numSignalsLow">
+            <p class="seeNumSigC" id="seeLowSig">0</p>
+            <p class="SigAm">LowCaps</p>
+        </div>
+        <div id="numSignalsIco">
+            <p class="seeNumSigC" id="seeIcoSig">0</p>
+            <p class="SigAm">Presales</p>
+        </div>
+        <div id="alScoreDiv">
+            <p id="alScore"  class="seeNumSigC">0</p>
+            <p class="SigAm">AlphaScore</p>
+        </div>
+        <div id="accurTot">
+            <p id="alAccur"  class="seeNumSigC">0%</p>
+            <p class="SigAm">Accuracy</p>
+        </div>
+
+    </div>
+
+    <script src="uZone.js"></script>
+    
+
+</body>
+</html>

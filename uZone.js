@@ -2100,12 +2100,31 @@ const ABI3 = [
     stateMutability: "view",
     type: "function",
   },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "",
+        type: "address",
+      },
+    ],
+    name: "timesUsedReferralCode",
+    outputs: [
+      {
+        internalType: "uint32",
+        name: "",
+        type: "uint32",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
 ];
 var web3Instance = new Web3(web3.currentProvider);
 
 const conAddress = "0x6994eD4f085b000eC4e0cA4F58cFCb11f075e13a";
 const conAddress2 = "0xc533936679A325622c42b9eF721a3E59Cf6B300c";
-const conAddress3 = "0x10B0c63Eb35e64e4dFFF50457dBD3a0f06033303";
+const conAddress3 = "0x59C901d203B1920E316f50d3847ED035D5c11Cfe";
 const contract = new web3Instance.eth.Contract(ABI, conAddress);
 const contract2 = new web3Instance.eth.Contract(ABI2, conAddress2);
 const contract3 = new web3Instance.eth.Contract(ABI3, conAddress3);

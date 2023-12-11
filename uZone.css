@@ -266,13 +266,13 @@ body{
     margin-top: 6vh;
     margin-left: 3vw;
     color:rgb(255, 255, 255);
-    background-color: #0000006c;
+    background-color: #1d1d1d;
     border-radius: 1vw;
     text-align: center;
     padding-top: 2vh;
     padding-bottom: 5vh;
     letter-spacing: 0.5px;
-    box-shadow: inset 0vw 0vw 1vw rgb(0 0 0);
+    box-shadow: 0vw 0vw 1vw rgb(0 0 0);
     width: 8vw;
 }
 
@@ -375,13 +375,13 @@ body{
     margin-top: 5.5vh;
     margin-left: 16.1vw;
     color:rgb(255, 255, 255);
-    background-color: #0000006c;
+    background-color: #1d1d1d;
     border-radius: 1vw;
     text-align: center;
     padding-top: 2vh;
     padding-bottom: 5vh;
     letter-spacing: 0.5px;
-    box-shadow: inset 0vw 0vw 1vw rgb(0 0 0);
+    box-shadow: 0vw 0vw 1vw rgb(0 0 0);
     width: 8vw;
 }
 
@@ -391,7 +391,7 @@ body{
     font-family: sans-serif;
     margin-top: 24.5vh;
     margin-left: 6.2vw;
-    color: rgb(247 247 247);
+    color: rgb(180, 180, 180);
     z-index: 3;
 }
 
@@ -402,40 +402,39 @@ body{
     margin-top: 18vh;
     margin-left: 3.2vw;
     color:rgb(255, 255, 255);
-    box-shadow: inset 0vw 0vw 1vw rgb(0 0 0);
+    box-shadow: 0vw 0vw 1vw rgb(0 0 0);
     width: 8vw;
-    background-color: #0000006c;
+    background-color: #1d1d1d;
     border-radius: 1vw;
     text-align: center;
     padding-top: 2vh;
     padding-bottom: 5vh;
-    z-index: 4;
 }
 
 #nextPayText {
     position: absolute;
     font-size: 1vw;
     font-family: sans-serif;
-    margin-top: 25.5vh;
+    margin-top: 25vh;
     margin-left: 17.2vw;
     color:rgb(180, 180, 180);
+    z-index: 2;
 }
 
 #nextPay {
     position: absolute;
     font-size: 1.1vw;
     font-family: sans-serif;
-    margin-top: 18.5vh;
-    margin-left: 16.3vw;
+    margin-top: 18vh;
+    margin-left: 16.2vw;
     color:rgb(255, 255, 255);
-    box-shadow: inset 0vw 0vw 1vw rgb(0 0 0);
+    box-shadow: 0vw 0vw 1vw rgb(0 0 0);
     width: 8vw;
-    background-color: #0000006c;
+    background-color: #1d1d1d;
     border-radius: 1vw;
     text-align: center;
     padding-top: 2vh;
     padding-bottom: 5vh;
-    z-index: 4;
 }
 
 #zoneBut{
@@ -1909,3 +1908,4 @@ body{
     background-color: rgba(255, 0, 0, 0);
     padding: 0.2vw;
 }
+
